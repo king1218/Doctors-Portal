@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import appointment from '../../assets/images/appointment.png'
 
 const ContactUs = () => {
@@ -17,7 +18,7 @@ const ContactUs = () => {
             <input type="email" placeholder="Email" class="input w-full max-w-sm block "/>
             <input type="text" placeholder="Subject" class="input w-full max-w-sm block my-4"/>
             <textarea className="textarea block max-w-sm w-full my-4"  placeholder="Your message"></textarea>
-            <button className='btn bg-gradient-to-r from-secondary to-primary text-white text-center w-full'>Submit</button>
+            <Link to='/appointment' className='btn bg-gradient-to-r from-secondary to-primary text-white text-center w-full'>Submit</Link>
             </form>
             </div>
             </div>

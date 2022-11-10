@@ -13,8 +13,8 @@ const SocialLogin = () => {
     //login with google:
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [token] = useToken(user);
-    if(user){
-      // navigate(from, { replace: true });
+    if(token){
+       navigate(from, { replace: true });
 
       
     }

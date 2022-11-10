@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -8,7 +9,7 @@ const Banner = () => {
         <div className='lg:flex-1'>
           <h1 className="md:text-5xl text-3xl font-bold">Your New Smile Starts Here! </h1>
           <p className="py-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-          <button className="btn bg-gradient-to-r from-secondary to-primary text-white border-none ">Get Started</button>
+          <Link to='/appointment' className="btn bg-gradient-to-r from-secondary to-primary text-white border-none ">Get Started</Link>
         </div>
       </div>
     </div>

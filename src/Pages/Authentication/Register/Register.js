@@ -35,11 +35,15 @@ const Register = () => {
         
       }
 
-      if(loading){
+      if(loading || updating){
         return <Loading></Loading>
       }
-      if(user){
-        // navigate('/appointment')
+
+      if(token){
+        navigate('/appointment')
+      }
+      if(error|| Updateerror){
+        return <ErrorPage error = {error||Updateerror}></ErrorPage>
       }
       
     return (
